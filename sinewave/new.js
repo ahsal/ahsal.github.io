@@ -11,7 +11,7 @@ const wave = {
 }
      let increment = wave.frequency
     let j;
-    function clear(){ c.clearRect(0, 0, innerWidth, innerHeight)}
+    function clear(){ c.clearRect(0, 0, innerWidth, innerHeight);}
 
     function draw_cos() {
         c.beginPath();
