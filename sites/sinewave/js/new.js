@@ -47,16 +47,8 @@ const wave = {
     
         j += 1;
     console.log(j);
-
-
- 
-        
-       
-        
-    
-
     }
-   anime()
+   anime();
 
 
 
