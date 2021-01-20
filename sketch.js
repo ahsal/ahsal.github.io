@@ -7,26 +7,32 @@ function setup() {
   slider = createSlider(0, TWO_PI, PI / 4, 0.01)
 }
 function draw() {
-  background(51);
+  background(255);
+  console.log(angle);
   // angle = slider.value();
+  if(angle < PI / 4){
   angle +=0.01;
-  stroke(255);
+  }
+  
+  
+  stroke(0);
   translate(width/2, height);
-  branch(100);
+  b1 = new Branch(height / 4)
 
 }
 
-// function branch(arg){
+function Branch(arg){
+  this.arg = arg;
   line(0, 0, 0,-arg);
   translate(0, -arg)
   if(arg > 1){
     push();
     rotate(angle);
-    branch(arg*0.6);
+    Branch(arg*0.6);
     pop();
     push();
     rotate(-angle);
-    branch(arg*0.6);
+    Branch(arg*0.6);
     pop();
   }
 

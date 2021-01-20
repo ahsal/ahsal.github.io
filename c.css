@@ -2,6 +2,11 @@
 	--main-radius:5px;
 	--main-padding: 5px;
 }
+canvas{
+	position: absolute;
+	top:200px;
+
+}
 
 
 .container {
