@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr">
+   <head>
+     <meta charset="utf-8">
+     <title></title>
+<link rel="stylesheet" href = "style.css">
+
+   <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
+     <script src="sketch.js" charset="utf-8"></script>
+   </head>
+   <body>
+     <div class="s">
+
+        <h1>Welcome to my site</h1>
+       <p> this site is all about some random stuffs i find on internet
+         and attempting to create those stuffs by looking through
+         the literal source codes of those programs and understandig
+         the stuffs behind's its woking
+      </p>
+     </div>
+     <div class='left'>
+       <div class="exp">
+         <h3>explanation</h3>
+         <p>
+           var angle = 0;
+           // var slider;
+           function setup() {
+             createCanvas(innerWidth, innerHeight);
+             // slider = createSlider(0, TWO_PI, PI / 4, 0.01)
+           }
+           function draw() {
+             background(51);
+             // angle = slider.value();
+           if(angle < PI/5){
+             angle +=0.01;
+           }
+             stroke(255);
+             translate(width/2, height);
+             branch(100);
+           }
+
+           function branch(arg){
+             line(0, 0, 0,-arg);
+             translate(0, -arg)
+             if(arg > 1){
+               push();
+               rotate(angle);
+               branch(arg*0.6);
+               pop();
+               push();
+               rotate(-angle);
+               branch(arg*0.6);
+               pop();
+             }
+           }
+         </p>
+       </div>
+
+     </div>
+   </body>
+ </html>

@@ -1,0 +1,48 @@
+html, body{
+  margin: 0;
+  overflow: hidden;
+
+}
+.p {
+  position: absolute;
+  font-family: monospace;
+  color: white;
+  background: grey;
+  font-size: 10px;
+  left: 5%;
+  top: 20%;;
+  width: 20vw;
+  border: 10px solid grey;
+  border-radius: 5% 5% 25px 5%;
+
+}
+
+h1 {
+  position: absolute;
+  font-family: monospace;
+  color: white;
+  transform: translateX(-50%);
+  left: 50vw;
+
+
+}
+.left {
+  position: absolute;
+  height: 100%;
+  transform: translateX(-50%);
+   left: 100%;
+  background-color: rgb(221, 216, 216);
+  transition: 1s all ease-out;
+  visibility: hidden;
+}
+
+.left:hover{
+  width: 50%;
+  visibility: visible;
+
+}
+
+canvas{
+margin: 0;
+
+}
